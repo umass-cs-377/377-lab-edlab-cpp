@@ -1,1 +1,5 @@
-# 377-lab-inverted-index
+# Overview
+
+# Instructions
+
+# Go see Gradescope
