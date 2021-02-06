@@ -81,4 +81,4 @@ Answer the following questions about maps, with code referencing the main method
 	pokedex.delete(5);
 	cout << temp;
 ```
-1. (12 points) Write code that would remove all Pokémon whose name starts with the letter ‘M’. Your solution should be no more than 4 lines long.
+5. (12 points) Write code that would remove all Pokémon whose name starts with the letter ‘M’. Your solution should be no more than 4 lines long.
