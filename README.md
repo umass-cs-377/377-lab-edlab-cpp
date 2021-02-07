@@ -24,19 +24,19 @@ using namespace std;
 
 int main(){
 
-	map<int, string> pokedex;
+    map<int, string> pokedex;
 
-	pokedex.insert(pair<int, string>(2, "Ivysaur"));
-	pokedex.insert(pair<int, string>(5, "Charizard"));
-	pokedex.insert(pair<int, string>(6, "Squirtle"));
-	pokedex.insert(pair<int, string>(25, "Pikachu"));
-	pokedex.insert(pair<int, string>(39, "Jigglypuff"));
+    pokedex.insert(pair<int, string>(2, "Ivysaur"));
+    pokedex.insert(pair<int, string>(5, "Charizard"));
+    pokedex.insert(pair<int, string>(6, "Squirtle"));
+    pokedex.insert(pair<int, string>(25, "Pikachu"));
+    pokedex.insert(pair<int, string>(39, "Jigglypuff"));
 
-	for (auto pokemon = pokedex.begin(); pokemon != pokedex.end(); pokemon ++) {
-		cout << pokemon->first << ": " << pokemon->second << endl;
-	}
+    for (auto pokemon = pokedex.begin(); pokemon != pokedex.end(); pokemon ++) {
+        cout << pokemon->first << ": " << pokemon->second << endl;
+    }
 
-	//Question code goes here
+    //Question code goes here
 }
 ```
 
@@ -49,7 +49,7 @@ Answer the following questions about maps, with code referencing the main method
 1. (2 points) Would `pokedex.insert(pair<int, string>("Mew", 151));` run properly?
 1. (2 points) What is the maximum size of a map? (HINT: there is one)
 1. (2 points) If the code `map.clear()` was run, what would `map.size()` return?
-1. (2 points) Consider the following code. Would its printed output be equal to "Charizard"? 
+1. (2 points) Consider the following code. Would its printed output be equal to "Charizard"?
 ```
 	string temp = pokedex.at(5);
 	pokedex.delete(5);
@@ -73,38 +73,38 @@ set will not change. The following code shows how to
 #include <set>
 
 void print_set(std::set<int> s) {
-  std::cout << "The elements in the set are:";
-  for (auto it=s.begin(); it != s.end(); ++it) {
-    std::cout << " " << *it;
-  }
-  std::cout << std::endl;
-  std::cout << "The size of the set is: " << s.size() << std::endl << std::endl;
+    std::cout << "The elements in the set are:";
+    for (auto it=s.begin(); it != s.end(); ++it) {
+        std::cout << " " << *it;
+    }
+    std::cout << std::endl;
+    std::cout << "The size of the set is: " << s.size() << std::endl << std::endl;
 }
 
 int main() {
-  std::set<int> s;
-  std::cout << "Initial empty set" << std::endl;
-  print_set(s);
+    std::set<int> s;
+    std::cout << "Initial empty set" << std::endl;
+    print_set(s);
 
-  s.insert(10);
-  std::cout << "After inserting 10 into the set" << std::endl;
-  print_set(s);
+    s.insert(10);
+    std::cout << "After inserting 10 into the set" << std::endl;
+    print_set(s);
 
-  s.insert(42);
-  std::cout << "After inserting 42 into the set" << std::endl;
-  print_set(s);
+    s.insert(42);
+    std::cout << "After inserting 42 into the set" << std::endl;
+    print_set(s);
 
-  // insert the same item twice has no effect
-  s.insert(42);
-  std::cout << "After insert 42 twice:" << std::endl;
-  print_set(s);
+    // insert the same item twice has no effect
+    s.insert(42);
+    std::cout << "After insert 42 twice:" << std::endl;
+    print_set(s);
 
-  // Find whether an element is in the set
-  if (s.find(42) != s.end()) {
-    std::cout << "42 is in the set" << std::endl;
-  } else {
-    std::cout << "42 is not in the set" << std::endl;
-  }
+    // Find whether an element is in the set
+    if (s.find(42) != s.end()) {
+        std::cout << "42 is in the set" << std::endl;
+    } else {
+        std::cout << "42 is not in the set" << std::endl;
+    }
 }
 ```
 
@@ -122,17 +122,17 @@ The following code shows how to use `push()` and `pop()`.
 #include <queue>
 
 int main() {
-  std::queue<int> q;
+    std::queue<int> q;
 
-  for (int i = 0; i < 10; i++) {
-    q.push(i);
-  }
+    for (int i = 0; i < 10; i++) {
+        q.push(i);
+    }
 
-  while(!q.empty()) {
-    // Note that the pop() method only removes the first element but doesn not return it.
-    // You need to get the first element using the front() method.
-    std::cout << q.front() << std::endl;
-    q.pop();
-  }
+    while(!q.empty()) {
+        // Note that the pop() method only removes the first element but doesn not return it.
+        // You need to get the first element using the front() method.
+        std::cout << q.front() << std::endl;
+        q.pop();
+    }
 }
 ```
