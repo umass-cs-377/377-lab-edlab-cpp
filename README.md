@@ -108,8 +108,6 @@ int main() {
 }
 ```
 
-[Run the code yourself on Repl.it](https://repl.it/@wkk/cs377-lab1-set).
-
 ## Part 4: Queues
 
 In C++, queues are FIFO (First-In-First-Out) containers. The only way you can modify elements in a queue is by either
@@ -138,5 +136,3 @@ int main() {
   }
 }
 ```
-
-[Run the code yourself on Repl.it](https://repl.it/@wkk/cs377-lab1-queue).
