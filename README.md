@@ -8,7 +8,7 @@ Please submit your answers to this lab on Gradescope in the assignment marked **
 
 ## Part 1: Edlab (10 Points)
 
-First, you will need to show that you know how to successfully access the Edlab environment that we will be using for our programming projects this semester. Using a secure shell such as [this extension](https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd) for Google Chrome should suffice for the access. Connect to _____@elnux.cs.umass.edu, where the blank space is replaced by your UMass student username (the same one used for SPIRE and Moodle). Click on the ‘SFTP’ option to upload files. After it connects, it should ask you for your password, which you input to log in. If you do not already have a password, please create a new one – the default is set to ELaaabbb, where ‘aaa’ is the last 3 digits of your student ID and ‘bbb’ is the first three letters of your student username.
+First, you will need to show that you know how to successfully access the Edlab environment that we will be using for our programming projects this semester. Using a secure shell such as [the Secure Shell extension](https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd) for Google Chrome should suffice for the access. Connect to _____@elnux.cs.umass.edu, where the blank space is replaced by your UMass student username (the same one used for SPIRE and Moodle). Click on the ‘SFTP’ option to upload files. After it connects, it should ask you for your password, which you input to log in. If you do not already have a password, please create a new one – the default is set to ELaaabbb, where ‘aaa’ is the last 3 digits of your student ID and ‘bbb’ is the first three letters of your student username.
 
 Once you have successfully logged into Edlab, upload a file named ______.txt where the blank space is replaced with your SPIRE username using the ‘put’ command. Then, use the ‘ls’ command to view the file directory, and attach a screenshot to your solution.
 
@@ -16,7 +16,7 @@ Once you have successfully logged into Edlab, upload a file named ______.txt whe
 
 In C++, maps are a data type in the C++ standard library that allows for the mapping of one set of keys to a different set of values. An example of using a map is shown below, mapping a few numbers to their respective Pokémon.
 
-```
+```c++
 int main(){
 
 	map<int, string> pokedex;
