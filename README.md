@@ -12,6 +12,20 @@ First, you will need to show that you know how to successfully access the Edlab 
 
 Once you have successfully logged into Edlab, upload a file named `______.txt` where the blank space is replaced with your SPIRE username using the `put` command. Then, use the `ls` command to view the file directory, and attach a screenshot to your solution.
 
+Once you have logged in, you can clone this repo using
+
+```bash
+git clone https://github.com/umass-cs-377/377-lab-inverted-index.git
+```
+
+Then you can use `cd` to open the directory you just cloned:
+
+```bash
+cd 377-lab-inverted-index
+```
+
+This repo includes a Makefile that allows you to locally compile and run all the sample code listed in this tutorial. You can compile them by running `make`. Feel free to modify the source files yourself, after making changes you can run `make` again to build new binaries from your modified files. You can also use `make clean` to remove all the built files, this command is usually used when something went wrong during the compilation so that you can start fresh.
+
 ## Part 2: Maps (20 Points)
 
 In C++, maps are a data type in the C++ standard library that allows for the mapping of one set of keys to a different set of values. An example of using a map is shown below, mapping a few numbers to their respective Pokémon.
