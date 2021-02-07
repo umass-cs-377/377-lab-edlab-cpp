@@ -17,25 +17,27 @@ Once you have successfully logged into Edlab, upload a file named `______.txt` w
 In C++, maps are a data type in the C++ standard library that allows for the mapping of one set of keys to a different set of values. An example of using a map is shown below, mapping a few numbers to their respective Pokémon.
 
 ```c++
+#include <iostream>
+#include <map>
+
+using namespace std;
+
 int main(){
 
 	map<int, string> pokedex;
 
-	pokedex.insert(pair<int, string>(2, “Ivysaur”));
-	pokedex.insert(pair<int, string>(5, “Charizard”));
-	pokedex.insert(pair<int, string>(6, “Squirtle”));
-	pokedex.insert(pair<int, string>(25, “Pikachu”));
-	pokedex.insert(pair<int, string>(39, “Jigglypuff”));
+	pokedex.insert(pair<int, string>(2, "Ivysaur"));
+	pokedex.insert(pair<int, string>(5, "Charizard"));
+	pokedex.insert(pair<int, string>(6, "Squirtle"));
+	pokedex.insert(pair<int, string>(25, "Pikachu"));
+	pokedex.insert(pair<int, string>(39, "Jigglypuff"));
 
-	for (pokemon = pokedex.begin(); pokemon != pokedex.end(); pokemon ++) {
-		cout << pokemon->first << ‘: ‘ << pokemon->second << ‘\n’
+	for (auto pokemon = pokedex.begin(); pokemon != pokedex.end(); pokemon ++) {
+		cout << pokemon->first << ": " << pokemon->second << endl;
 	}
 
 	//Question code goes here
-
-	return 151;
 }
-
 ```
 
 The code above shows a map created that maps numbers to strings, and uses an iterator to list each number with its respective Pokémon. With this, we can get the values of our map (in this case, Pokémon) by entering their respective keys. As an example, the code `pokedex.at(6)` would return "Squirtle", while the code `pokedex.at(25)` would return "Pikachu". Note that using a key that is not registered in the map will throw an error for the `at` function. Thus, if I ran the code `pokedex.at(152)`, it would throw an error.
