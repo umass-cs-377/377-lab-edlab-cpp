@@ -50,11 +50,11 @@ Answer the following questions about maps, with code referencing the main method
 1. (2 points) What is the maximum size of a map? (HINT: there is one)
 1. (2 points) If the code `map.clear()` was run, what would `map.size()` return?
 1. (2 points) Consider the following code. Would its printed output be equal to "Charizard"?
-```
-	string temp = pokedex.at(5);
-	pokedex.delete(5);
-	cout << temp;
-```
+    ```c++
+    string temp = pokedex.at(5);
+    pokedex.delete(5);
+    cout << temp;
+    ```
 1. (12 points) Write code that would remove all Pokémon whose name starts with the letter 'M'. Your solution should be no more than 6 lines long.
 
 ## Part 3: Sets
