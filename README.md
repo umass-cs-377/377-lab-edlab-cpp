@@ -1,7 +1,4 @@
 # COMPSCI 377 LAB #1: Inverted Index
-Professor Tim Richards
-
-TAs Matthew Gregory, Priyanka Mary Mammen, and Bin Wang
 
 ## Purpose
 This lab is designed to make you more familiar with C++, the language you will need to program with in this course., and to ensure you are familiar with the Edlab environment. You are expected to already be familiar with essential programming techniques taught in previous classes like CS 187 and CS 220. Each lab in this course is counted as part of your lab grade in this class, which totals to 10% of your final grade.
