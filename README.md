@@ -1,7 +1,7 @@
 # COMPSCI 377 LAB #1: Inverted Index
 
 ## Purpose
-This lab is designed to make you more familiar with C++, the language you will use in combination with C in this course., and to ensure you are familiar with the Edlab environment. You are expected to already be familiar with essential programming techniques taught in previous classes like CS 121 and CS 187.
+This lab is designed to make you more familiar with C++, the language you will use in combination with C in this course, and to ensure you are familiar with the Edlab environment. You are expected to already be familiar with essential programming techniques taught in previous classes like CS 121 and CS 187.
 
 Please submit your answers to this lab on Gradescope in the assignment marked **Lab #1: Inverted Index**. Please see Gradescope for the due dates. The TA present in your lab will do a brief explanation of the various parts of this lab, but you are expected to answer all questions by yourself. Please raise your hand if you have any questions during the lab section. Questions and Parts have a number of points marked next to them to signify their weight in this lab’s final grade.
 
