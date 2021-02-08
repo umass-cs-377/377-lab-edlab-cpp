@@ -58,19 +58,6 @@ The code above shows a map created that maps numbers to strings, and uses an ite
 
 We can also use the `map.delete(key)` function to remove a mapping from the object, as long as the key is present in the map already. Using a method such as `map.size()` returns the size of the map being used, which is dynamic depending on the number of elements in the map. Finally, `map.clear()` empties the map entirely and deletes all entries.
 
-Answer the following questions about maps, with code referencing the main method written above at the designated line:
-
-1. (2 points) Would `pokedex.insert(pair<int, string>("Mew", 151));` run properly?
-1. (2 points) What is the maximum size of a map? (HINT: there is one)
-1. (2 points) If the code `map.clear()` was run, what would `map.size()` return?
-1. (2 points) Consider the following code. Would its printed output be equal to "Charizard"?
-    ```c++
-    string temp = pokedex.at(5);
-    pokedex.delete(5);
-    cout << temp;
-    ```
-1. (12 points) Write code that would remove all Pokémon whose name starts with the letter 'M'. Your solution should be no more than 6 lines long.
-
 ## Part 3: Sets
 
 In C++, sets are containers that store unique elements (like sets in discrete math). One important
