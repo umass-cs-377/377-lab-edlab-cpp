@@ -56,7 +56,7 @@ int main(){
 
 The code above shows a map created that maps numbers to strings, and uses an iterator to list each number with its respective Pokémon. With this, we can get the values of our map (in this case, Pokémon) by entering their respective keys. As an example, the code `pokedex.at(6)` would return "Squirtle", while the code `pokedex.at(25)` would return "Pikachu". Note that using a key that is not registered in the map will throw an error for the `at` function. Thus, if I ran the code `pokedex.at(152)`, it would throw an error.
 
-We can also use the `map.delete(key)` function to remove a mapping from the object, as long as the key is present in the map already. Using a method such as `map.size()` returns the size of the map being used, which is dynamic depending on the number of elements in the map. Finally, `map.clear()` empties the map entirely and deletes all entries.
+We can also use the `map.erase(key)` function to remove a mapping from the object, as long as the key is present in the map already. Using a method such as `map.size()` returns the size of the map being used, which is dynamic depending on the number of elements in the map. Finally, `map.clear()` empties the map entirely and deletes all entries.
 
 ## Part 3: Sets (15 Points)
 
