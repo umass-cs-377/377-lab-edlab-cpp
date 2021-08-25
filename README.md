@@ -1,4 +1,4 @@
-# COMPSCI 377 LAB #1: Inverted Index
+# COMPSCI 377 LAB: Inverted Index
 
 ## Purpose
 
