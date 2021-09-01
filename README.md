@@ -4,15 +4,21 @@
 
 This lab is designed to make you more familiar with C++, the language you will use in combination with C in this course, and to ensure you are familiar with the Edlab environment. You are expected to already be familiar with essential programming techniques taught in previous classes like CS 121 and CS 187.
 
-Please submit your answers to this lab on Gradescope in the assignment marked **Lab #1: Inverted Index**. Please see Gradescope for the due dates. The TA present in your lab will do a brief explanation of the various parts of this lab, but you are expected to answer all questions by yourself. Please raise your hand if you have any questions during the lab section. Questions and Parts have a number of points marked next to them to signify their weight in this lab’s final grade.
+Please submit your answers to this lab on Gradescope in the assignment marked **Lab #1: Inverted Index**. Due dates are posted on Gradescope. Please read [this  guide](https://umass.moonami.com/mod/page/view.php?id=103701) to create an account on Gradescope before you continue further with this lab.
 
-## Part 1: Edlab (10 Points)
+The TA present in your lab will do a brief explanation of the various parts of this lab, but you are expected to answer all questions by yourself. Please raise your hand if you have any questions during the lab section. Questions and Parts have a number of points marked next to them to signify their weight in this lab’s final grade.
 
-First, you will need to show that you know how to successfully access the Edlab environment that we will be using for our programming projects this semester. Using a secure shell such as [the Secure Shell extension](https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd) for Google Chrome should suffice for the access. Connect to _____@elnux.cs.umass.edu, where the blank space is replaced by your UMass student username (the same one used for SPIRE and Moodle). Click on the ‘SFTP’ option to upload files. After it connects, it should ask you for your password, which you input to log in. If you do not already have a password, please create a new one – the default is set to `ELaaabbb`, where `aaa` is the last 3 digits of your student ID and `bbb` is the first three letters of your student username.
+## Part 1: Connecting to Edlab (10 Points)
 
-Once you have successfully logged into Edlab, upload a file named `______.txt` where the blank space is replaced with your SPIRE username using the `put` command. Then, use the `ls` command to view the file directory, and attach a screenshot to your solution.
+Please watch [this video](https://www.youtube.com/watch?v=Ztca75vQHFQ) for essential guidance covering Part 1 of the lab.
 
-Once you have logged in, you can clone this repo using
+First, you will need to show that you know how to successfully access the Edlab environment that we will be using for our programming projects this semester. Using a secure shell such as [the Secure Shell extension](https://chrome.google.com/webstore/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd) for Google Chrome should suffice for the access. Please install this extension to Chrome. Alternatively, you may use other popular programs to use SSH (remote access) and SFTP (file transfer), such as PuTTY (Windows only), WinSCP (Windows only, a GUI program for SFTP - great if you prefer a GUI to manage files), or on MacOS or Linux, you may use the built in programs "ssh" and "sftp" from your local terminal. 
+
+Connect to _____@elnux.cs.umass.edu, where the blank space is replaced by your UMass student username (the same one used for SPIRE and Moodle). Next, click on the ‘**SFTP**’ button to upload files. Note: The SSH Extension for Chrome can be used for both SSH (remote access) and SFTP (file transfer). Once your shell connects, it should ask you for your EdLab password (NOTE: this is a separate account from your CICS and UMass logins), please type your password to log in. If you do not already have a password, the shell will prompt you to create a new one – your customized default password has been set to `ELaaabbb`, where `aaa` is the last 3 digits of your student ID and `bbb` is the first three letters of your student username. If you do not know your password, please visit [this site](https://elipareset.cs.umass.edu:9443/) to reset your EdLab password. If you still cannot login, please email system@cs.umass.edu to connect with the CICS IT team to resolve your connection/account issue. They are good people.
+
+Once you have successfully logged into Edlab, you should see a prompt for sftp, confirming your SFTP connection to elnux. Next, using SFTP, upload a file named `______.txt` where the blank space is replaced with your SPIRE username using the `put` command. Note: `put` can only be used when within sftp. To demonstrate that you have successfully used SFTP to `put` aka upload this file, please take a screenshot of the directory contents by using the command `ls` to list out the files in your current directory. 
+
+Now, let's retrieve the files used in this lab. You may clone this repo using
 
 ```bash
 git clone https://github.com/umass-cs-377/377-lab-inverted-index.git
@@ -23,8 +29,9 @@ Then you can use `cd` to open the directory you just cloned:
 ```bash
 cd 377-lab-inverted-index
 ```
+Alterntive to using git clone, you may download a .zip file of the same lab contents [here, via the class github page](https://github.com/umass-cs-377/377-lab-inverted-index/archive/refs/heads/main.zip), and then use SFTP to move the files to EdLab.
 
-This repo includes a Makefile that allows you to locally compile and run all the sample code listed in this tutorial. You can compile them by running `make`. Feel free to modify the source files yourself, after making changes you can run `make` again to build new binaries from your modified files. You can also use `make clean` to remove all the built files, this command is usually used when something went wrong during the compilation so that you can start fresh.
+This repo includes a Makefile that allows you to locally compile and run all the sample code listed in this tutorial. **You can compile them by running `make`.** Feel free to modify the source files yourself, after making changes you can run `make` again to build new binaries from your modified files. You can also use `make clean` to remove all the built files, this command is usually used when something went wrong during the compilation so that you can start fresh. Reminder: To run the "map" program, use "./map"
 
 ## Part 2: Maps (15 Points)
 
