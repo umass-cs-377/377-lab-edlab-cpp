@@ -8,6 +8,8 @@ The TA present in your lab will do a brief explanation of the various parts of t
 
 Please read through this lab and follow the instructions. After you do that, visit Gradescope and complete the questions associated with this lab by the assigned due date.
 
+**You may work in groups up to 3 to complete this lab. Make sure you submit as a group in Gradescope.**
+
 ## Part 1: Connecting to Edlab (10 Points)
 
 First, you will need to show that you know how to successfully access the Edlab environment that we will be using for our programming projects this semester. The `ssh` and `sftp` programs are available from the command line on Mac, Linux, and Windows. If you are unfamiliar with these programs or forgot how to use them make sure you ask questions so we can help you out. Yes, there are GUI programs for transfering files, but this is a systems course so we frown upon their use in this class!
