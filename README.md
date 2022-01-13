@@ -4,9 +4,9 @@
 
 This lab is designed to make you more familiar with C++, the language you will use in combination with C in this course, and to ensure you are familiar with the Edlab environment. You are expected to already be familiar with essential programming techniques taught in previous classes like CS 121 and CS 187.
 
-Please submit your answers to this lab on Gradescope in the assignment marked **Lab #1: Inverted Index**. Due dates are posted on Gradescope. Please read [this  guide](https://umass.moonami.com/mod/page/view.php?id=103701) to create an account on Gradescope before you continue further with this lab.
-
 The TA present in your lab will do a brief explanation of the various parts of this lab, but you are expected to answer all questions by yourself. Please raise your hand if you have any questions during the lab section. Questions and Parts have a number of points marked next to them to signify their weight in this lab’s final grade.
+
+Please read through this lab and follow the instructions. After you do that, visit Gradescope and complete the questions associated with this lab by the assigned due date.
 
 ## Part 1: Connecting to Edlab (10 Points)
 
