@@ -1,4 +1,4 @@
-# COMPSCI 377 LAB: Inverted Index
+# COMPSCI 377 LAB: Edlab, VSCode, and C++
 
 ## Purpose
 
