@@ -10,7 +10,7 @@ Please read through this lab and follow the instructions. After you do that, vis
 
 **You may work in groups up to 3 to complete this lab. Make sure you submit as a group in Gradescope.**
 
-## Part 1: Connecting to Edlab (10 Points)
+## Part 0: Connecting to Edlab 
 
 First, you will need to show that you know how to successfully access the Edlab environment that we will be using for our programming projects this semester. The `ssh` and `sftp` programs are available from the command line on Mac, Linux, and Windows. If you are unfamiliar with these programs or forgot how to use them make sure you ask questions so we can help you out. Yes, there are GUI programs for transfering files, but this is a systems course so we frown upon their use in this class!
 
@@ -21,19 +21,19 @@ Once you have successfully logged into Edlab, you should see a prompt for sftp, 
 Now, let's retrieve the files used in this lab. You may clone this repo using
 
 ```bash
-git clone https://github.com/umass-cs-377/377-lab-inverted-index.git
+git clone https://github.com/umass-cs-377/377-lab-edlab-cpp.git
 ```
 
 Then you can use `cd` to open the directory you just cloned:
 
 ```bash
-cd 377-lab-inverted-index
+cd 377-lab-edlab-cpp
 ```
-Alterntive to using git clone, you may download a .zip file of the same lab contents [here, via the class github page](https://github.com/umass-cs-377/377-lab-inverted-index/archive/refs/heads/main.zip), and then use SFTP to move the files to EdLab.
+Alterntive to using git clone, you may download a .zip file of the same lab contents [here, via the class github page](https://github.com/umass-cs-377/377-lab-edlab-cpp/archive/refs/heads/main.zip), and then use SFTP to move the files to EdLab.
 
 This repo includes a Makefile that allows you to locally compile and run all the sample code listed in this tutorial. **You can compile them by running `make`.** Feel free to modify the source files yourself, after making changes you can run `make` again to build new binaries from your modified files. You can also use `make clean` to remove all the built files, this command is usually used when something went wrong during the compilation so that you can start fresh. Reminder: To run the "map" program, use "./map"
 
-## Part 2: Maps (15 Points)
+## Part 1: Maps (15 Points)
 
 In C++, maps are a data type in the C++ standard library that allows for the mapping of one set of keys to a different set of values. An example of using a map is shown below, mapping a few numbers to their respective Pokémon.
 
@@ -65,7 +65,7 @@ The code above shows a map created that maps numbers to strings, and uses an ite
 
 We can also use the `map.erase(key)` function to remove a mapping from the object, as long as the key is present in the map already. Using a method such as `map.size()` returns the size of the map being used, which is dynamic depending on the number of elements in the map. Finally, `map.clear()` empties the map entirely and deletes all entries.
 
-## Part 3: Sets (15 Points)
+## Part 2: Sets (15 Points)
 
 In C++, sets are containers that store unique elements (like sets in discrete math). One important
 property of sets is that if you try to insert an element that is already in a set, the state of the
@@ -116,7 +116,7 @@ int main() {
 }
 ```
 
-## Part 4: Queues (5 Points)
+## Part 3: Queues (5 Points)
 
 In C++, queues are FIFO (First-In-First-Out) containers. The only way you can modify elements in a queue is by either
 
