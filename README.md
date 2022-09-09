@@ -16,7 +16,10 @@ First, you will need to show that you know how to successfully access the Edlab 
 
 Connect to _____@elnux.cs.umass.edu, where the blank space is replaced by your UMass student username (the same one used for SPIRE and Moodle). Next, click on the ‘**SFTP**’ button to upload files. Note: The SSH Extension for Chrome can be used for both SSH (remote access) and SFTP (file transfer). Once your shell connects, it should ask you for your EdLab password (NOTE: this is a separate account from your CICS and UMass logins), please type your password to log in. If you do not already have a password, the shell will prompt you to create a new one – your customized default password has been set to `ELaaabbb`, where `aaa` is the last 3 digits of your student ID and `bbb` is the first three letters of your student username. If you do not know your password, please visit [this site](https://elipareset.cs.umass.edu:9443/) to reset your EdLab password. If you still cannot login, please email system@cs.umass.edu to connect with the CICS IT team to resolve your connection/account issue. They are good people.
 
+<!---
+The following activity is not assigned anymore. I will keep it here but not shown to the student.
 Once you have successfully logged into Edlab, you should see a prompt for sftp, confirming your SFTP connection to elnux. Next, using SFTP, upload a file named `______.txt` where the blank space is replaced with your SPIRE username using the `put` command. Note: `put` can only be used when within sftp. To demonstrate that you have successfully used SFTP to `put` aka upload this file, please take a screenshot of the directory contents by using the command `ls` to list out the files in your current directory. 
+-->
 
 Now, let's retrieve the files used in this lab. You may clone this repo using
 
