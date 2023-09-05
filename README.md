@@ -36,7 +36,7 @@ Alterntive to using git clone, you may download a .zip file of the same lab cont
 
 This repo includes a Makefile that allows you to locally compile and run all the sample code listed in this tutorial. **You can compile them by running `make`.** Feel free to modify the source files yourself, after making changes you can run `make` again to build new binaries from your modified files. You can also use `make clean` to remove all the built files, this command is usually used when something went wrong during the compilation so that you can start fresh. Reminder: To run the "map" program, use "./map"
 
-## Part 1: Maps (15 Points)
+## Part 1: Maps
 
 In C++, maps are a data type in the C++ standard library that allows for the mapping of one set of keys to a different set of values. An example of using a map is shown below, mapping a few numbers to their respective Pokémon.
 
@@ -68,7 +68,7 @@ The code above shows a map created that maps numbers to strings, and uses an ite
 
 We can also use the `map.erase(key)` function to remove a mapping from the object, as long as the key is present in the map already. Using a method such as `map.size()` returns the size of the map being used, which is dynamic depending on the number of elements in the map. Finally, `map.clear()` empties the map entirely and deletes all entries.
 
-## Part 2: Sets (15 Points)
+## Part 2: Sets 
 
 In C++, sets are containers that store unique elements (like sets in discrete math). One important
 property of sets is that if you try to insert an element that is already in a set, the state of the
@@ -119,7 +119,7 @@ int main() {
 }
 ```
 
-## Part 3: Queues (5 Points)
+## Part 3: Queues
 
 In C++, queues are FIFO (First-In-First-Out) containers. The only way you can modify elements in a queue is by either
 
