@@ -44,20 +44,19 @@ In C++, maps are a data type in the C++ standard library that allows for the map
 #include <iostream>
 #include <map>
 
-using namespace std;
 
 int main(){
 
-    map<int, string> pokedex;
+    std::map<int, std::string> pokedex;
 
-    pokedex.insert(pair<int, string>(2, "Ivysaur"));
-    pokedex.insert(pair<int, string>(5, "Charizard"));
-    pokedex.insert(pair<int, string>(6, "Squirtle"));
-    pokedex.insert(pair<int, string>(25, "Pikachu"));
-    pokedex.insert(pair<int, string>(39, "Jigglypuff"));
+    pokedex.insert(std::pair<int, std::string>(4, "Ivysaur"));
+    pokedex.insert(std::pair<int, std::string>(5, "Charizard"));
+    pokedex.insert(std::pair<int, std::string>(6, "Squirtle"));
+    pokedex.insert(std::pair<int, std::string>(25, "Pikachu"));
+    pokedex.insert(std::pair<int, std::string>(39, "Jigglypuff"));
 
     for (auto pokemon = pokedex.begin(); pokemon != pokedex.end(); pokemon ++) {
-        cout << pokemon->first << ": " << pokemon->second << endl;
+        std::cout << pokemon->first << ": " << pokemon->second << std::endl;
     }
 
     //Question code goes here
